@@ -112,7 +112,7 @@ Techniques used:
 
     - Aggregates with GROUP BY: Total rentals, revenue per genre, revenue per store, etc.
 
-    - Window functions: Ranking movies by revenue or rental count, identifying top             customers, etc.
+    - Window functions: Ranking movies by revenue or rental count, identifying top  customers, etc.
 
 Example queries:
 
@@ -120,5 +120,5 @@ Example queries:
 
     - Retrieve the top 10 most popular movies by rental count using RANK() OVER (ORDER BY     COUNT(r.rental_id) DESC).
 
-    - Generate summary views, i.e., top 5 genres by average revenue, using windowed             ranking functions.
+    - Generate summary views, i.e., top 5 genres by average revenue, using windowed     ranking functions.
 
