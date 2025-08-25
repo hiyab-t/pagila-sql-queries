@@ -7,7 +7,7 @@ resource "aws_db_instance" "pagila" {
     storage_type = "gp2"
     identifier = "pagila"
     username = "postgres"
-    password = "Kangfupanda12"
+    password = "*******"
     publicly_accessible = true
     skip_final_snapshot = true
 

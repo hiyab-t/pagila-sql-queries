@@ -2,23 +2,17 @@
 
 # Project Background
 
-This project is a hands-on SQL practice with the Pagila DVD rental PostreSQL sample database. It is part of my Data Analytics training in the Datanomics Bootcamp, designed to stregthen SQL basic and advanced querying skills for analytics and reporting.
+This project is a hands-on SQL practice with the Pagila DVD rental PostreSQL sample database. It is part of my Data Analytics training in the Datanomics Bootcamp, designed to stregthen both basic and advanced SQL querying skills for analytics and reporting.
 
-Goals of this project:
-
-- Provision a PostgreSQL database using AWS RDS built and deployed by Terraform.
-
-- Load the Pagila schema and data.
-
-- Practice analytical SQL queries in a cloud-hosted environment.
+The goal of this project is to analyze historical rental and payment data, simulating real-world database operations, and performing DML, DDL and DQL tasks. In addition, for my own learning, Terraform is used to provision a PostgreSQL database in AWS RDS for a practical experience with Infrastructure as Code (IaC) and cloud integrated databased deployment.
 
 # Infrastructure Setup (Terraform + AWS RDS)
 
-This project uses Terraform to provision the postgres database. All infrastructure is defined in rds-terraform.tf, which provisions an Amazon RDS PostgreSQL instance all within the free tier quota.
+This project uses Terraform to provision the postgres database. All infrastructure is defined in `rds-terraform.tf` and `provider.tf`, which provision AWS RDS PostgreSQL instance all within the Amazon Free Fier quota.
 
 **Prerequisities**
 
-- Install Terraform locally.
+- Install Terraform locally
 
 - Install and configure AWS CLI
 
@@ -88,5 +82,43 @@ You can use pgAdmin for a graphical interface to connect to PostgreSQL and run q
 
 # SQL Practice 
 
-The exercises cover data manipulation (DML)
+The exercises cover data manipulation (DML), data definition language (DDL), data querying (DQL) and analytics.
+
+**1. Data Manipulation (DML)**
+
+ Simulated ongoing business operations by adding new rentals and payments, and updating rental returns.
+
+Example queries:
+
+Check whether a movie is in inventory and available for rent.
+
+Insert new rental and payment records for a customer.
+
+Update rental records when movies are returned.
+
+Verify inserted and updated records to maintain data integrity.
+
+2. Data Definition Language (DDL)
+
+Defined database objects for enhanced analytics.
+
+Example: Created view to see top 5 genres by revenue
+
+2. Data Querying and Analysis (DQL)
+
+Objective: Analyze historical rental and payment data to generate actionable business insights.
+
+Techniques used:
+
+Aggregates with GROUP BY: Total rentals, revenue per genre, revenue per store, etc.
+
+Window functions: Ranking movies by revenue or rental count, identifying top customers, etc.
+
+Example queries:
+
+Identify the most and least popular genres and total revenue.
+
+Retrieve the top 10 most popular movies by rental count using RANK() OVER (ORDER BY COUNT(r.rental_id) DESC).
+
+Generate summary views, i.e., top 5 genres by average revenue, using windowed ranking functions.
 
