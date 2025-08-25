@@ -118,7 +118,5 @@ Example queries:
 
     - Identify the most and least popular genres and total revenue.
 
-    - Retrieve the top 10 most popular movies by rental count using RANK() OVER (ORDER BY     COUNT(r.rental_id) DESC).
-
-    - Generate summary views, i.e., top 5 genres by average revenue, using windowed     ranking functions.
+    - Retrieve the top 10 most popular movies by rental count using RANK() OVER (ORDER BY COUNT(r.rental_id) DESC).
 
