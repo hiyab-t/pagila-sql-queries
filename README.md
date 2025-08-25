@@ -86,39 +86,39 @@ The exercises cover data manipulation (DML), data definition language (DDL), dat
 
 **1. Data Manipulation (DML)**
 
- Simulated ongoing business operations by adding new rentals and payments, and updating rental returns.
+- Simulated ongoing business operations by adding new rentals and payments, and updating rental returns.
 
 Example queries:
 
-Check whether a movie is in inventory and available for rent.
+    - Check whether a movie is in inventory and available for rent.
 
-Insert new rental and payment records for a customer.
+    - Insert new rental and payment records for a customer.
 
-Update rental records when movies are returned.
+    - Update rental records when movies are returned.
 
-Verify inserted and updated records to maintain data integrity.
+    - Verify inserted and updated records to maintain data integrity.
 
 2. Data Definition Language (DDL)
 
-Defined database objects for enhanced analytics.
+- Defined database objects for enhanced analytics.
 
 Example: Created view to see top 5 genres by revenue
 
 2. Data Querying and Analysis (DQL)
 
-Objective: Analyze historical rental and payment data to generate actionable business insights.
+- Analyzed historical rental and payment data to generate actionable business insights.
 
 Techniques used:
 
-Aggregates with GROUP BY: Total rentals, revenue per genre, revenue per store, etc.
+    - Aggregates with GROUP BY: Total rentals, revenue per genre, revenue per store, etc.
 
-Window functions: Ranking movies by revenue or rental count, identifying top customers, etc.
+    - Window functions: Ranking movies by revenue or rental count, identifying top             customers, etc.
 
 Example queries:
 
-Identify the most and least popular genres and total revenue.
+    - Identify the most and least popular genres and total revenue.
 
-Retrieve the top 10 most popular movies by rental count using RANK() OVER (ORDER BY COUNT(r.rental_id) DESC).
+    - Retrieve the top 10 most popular movies by rental count using RANK() OVER (ORDER BY     COUNT(r.rental_id) DESC).
 
-Generate summary views, i.e., top 5 genres by average revenue, using windowed ranking functions.
+    - Generate summary views, i.e., top 5 genres by average revenue, using windowed             ranking functions.
 
