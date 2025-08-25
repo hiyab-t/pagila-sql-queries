@@ -98,13 +98,13 @@ Example queries:
 
     - Verify inserted and updated records to maintain data integrity.
 
-2. Data Definition Language (DDL)
+**2. Data Definition Language (DDL)**
 
 - Defined database objects for enhanced analytics.
 
 Example: Created view to see top 5 genres by revenue
 
-2. Data Querying and Analysis (DQL)
+**3. Data Querying and Analysis (DQL)**
 
 - Analyzed historical rental and payment data to generate actionable business insights.
 
